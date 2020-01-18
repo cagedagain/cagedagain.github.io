@@ -1,0 +1,200 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 1em 1em;
+  background-color: #fff;
+  color: #666;
+}
+
+p {
+  padding-right: 10px;
+  line-height: 1.5em;
+}
+
+ul {
+  padding-right: 40px;
+  line-height: 1.5em;
+}
+
+.resume {
+  min-width: 350px;
+  margin: auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 80px;
+  grid-template-areas:
+    "buttons"
+    "name"
+    "about"
+    "work"
+    "education"
+    "awards";
+}
+
+section.name {
+  grid-area: name;
+}
+
+section.name h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+section.name h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+section.name h4 {
+  margin-bottom: 0px;
+}
+
+section.name h4 {
+  font-size: 1em;
+}
+
+section.buttons {
+  grid-area: buttons;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+section.about {
+  grid-area: about;
+  margin-bottom: 20px;
+}
+
+section.work {
+  grid-area: work;
+}
+
+section.education {
+  grid-area: education;
+}
+
+section.awards {
+  grid-area: awards;
+}
+
+.sectionHeader {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.colouredHeader {
+  color: #4468b1;
+}
+
+section.about p {
+  font-style: italic;
+}
+
+section article {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+h4 {
+  font-size: 0.8em;
+  color: #999;
+  margin-top: 0;
+}
+
+.sectionHeader {
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+.button {
+  background-color: #4468b1;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.button i {
+  margin-right: 10px;
+}
+
+@media (min-width: 621px) and (max-width: 1200px) {
+  body {
+    padding: 1em 2em;
+  }
+  .resume {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "name buttons"
+      "about about"
+      "work work"
+      "education education"
+      "awards awards";
+  }
+  section.buttons {
+    margin: auto;
+    display: block;
+  }
+  .button {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding: 1em 5%;
+  }
+  p {
+    padding-right: 40px;
+  }
+
+  ul {
+    padding-right: 120px;
+  }
+  .resume {
+    max-width: 1400px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "name buttons"
+      "about ."
+      "work education"
+      "work awards"
+      "work .";
+  }
+  section.buttons {
+    margin: auto;
+    display: block;
+  }
+  .button {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
