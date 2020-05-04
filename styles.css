@@ -38,6 +38,15 @@ ul {
   flex-direction: column;
 }
 
+.portfolio-content.image-right {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.portfolio-content img {
+  width: 100%;
+}
+
 section.name {
   grid-area: name;
 }
@@ -221,6 +230,9 @@ h4 {
       "work education"
       "work awards"
       "work .";
+  }
+  .portfolio {
+    max-width: 1400px;
   }
   section.buttons {
     margin: auto;
