@@ -31,6 +31,13 @@ ul {
     "awards";
 }
 
+.portfolio {
+  margin: auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
 section.name {
   grid-area: name;
 }
@@ -80,6 +87,10 @@ section.awards {
   grid-area: awards;
 }
 
+section.portfolio {
+  grid-area: portfolio;
+}
+
 .sectionHeader {
   border-bottom: 1px solid #d9d9d9;
 }
@@ -95,6 +106,12 @@ section.about p {
 section article {
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+section article a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #4468b1;
 }
 
 h1 {
@@ -140,6 +157,7 @@ h4 {
   font-size: 12px;
   margin-left: 5px;
   margin-right: 5px;
+  min-width: 80px;
 }
 
 .button:hover {
