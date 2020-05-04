@@ -17,6 +17,7 @@
     ></script>
 
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
     <title>Ian Edwards CV</title>
   </head>
   <body>
@@ -39,9 +40,24 @@
           </button></a
         >
 
-        <a href="https://bitbucket.org/cagedagain/" target="_blank"
+        <a href="#" id="temp-portfolio-link"
           ><button class="button">
             <i class="fab fa-bitbucket"></i>Portfolio
+          </button></a
+        >
+
+        <a
+          href="https://bitbucket.org/cagedagain/"
+          target="_blank"
+          id="nav-bitbucket"
+          ><button class="button">
+            <i class="fab fa-bitbucket"></i>Bitbucket
+          </button></a
+        >
+
+        <a href="https://github.com/cagedagain/" target="_blank" id="nav-github"
+          ><button class="button">
+            <i class="fab fa-github"></i>GitHub
           </button></a
         >
       </section>
@@ -96,7 +112,8 @@
             custom filter builder that can be used to send messages to a users
             mobile device if any games have met a specific criteria. This
             product has been built using a Node.js backend and a React/Redux
-            frontend.
+            frontend. (Hoping to launch mid-2020 when I can share more
+            information).
           </p>
         </article>
         <article>
@@ -139,21 +156,19 @@
         </article>
 
         <article>
-          <h1>Engineering Manager</h1>
+          <h1>Team Lead</h1>
           <h2>Akkroo (now Integrate Events)</h2>
           <h4>December 2016 - May 2018</h4>
           <p>
-            After building the team to 5 members I officially moved into a
-            temporary management role and away from hands-on development
-            responsibilities. This ensured that the growing team had dedicated
-            management to enable them to perform at their best and I could focus
-            on bringing structure to the working processes of the team. The team
+            After building the team to 5 members I moved into a Team Lead role
+            which required adding management responsibilities to my day-to-day
+            development tasks. This ensured that the growing team had dedicated
+            management to enable them to perform at their best. The team
             consisted of 9 on-site developers and 2 remote system
-            administrators. After implementing a scalable and repeatable SDLC
-            and CI/CD pipeline I moved back into a hands-on development role in
-            May 2018.
+            administrators. During this time I also put a lot of focus into
+            implementing a scalable and repeatable SDLC and CI/CD pipeline.
           </p>
-          <p>My key responsibilities included:</p>
+          <p>My key additional responsibilities as Team Lead included:</p>
           <ul>
             <li>
               Building a strong culture of feedback
@@ -248,4 +263,13 @@
       </section>
     </div>
   </body>
+
+  <script type="text/javascript">
+    //Add temporary alert box until portfolio page has been created
+    document
+      .getElementById("temp-portfolio-link")
+      .addEventListener("click", function () {
+        alert("Coming soon");
+      });
+  </script>
 </html>
