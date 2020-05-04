@@ -38,6 +38,10 @@ ul {
   flex-direction: column;
 }
 
+.portfolio-content.image-left {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
 .portfolio-content.image-right {
   display: grid;
   grid-template-columns: 2fr 1fr;
