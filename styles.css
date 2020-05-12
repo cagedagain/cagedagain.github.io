@@ -38,17 +38,29 @@ ul {
   flex-direction: column;
 }
 
+.portfolio-content {
+  margin-bottom: 50px;
+}
+
 .portfolio-content.image-left {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 .portfolio-content.image-right {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
-.portfolio-content img {
-  width: 100%;
+.portfolio-content .content {
+  margin-bottom: 25px;
+}
+
+.portfolio-content .image {
+  margin: auto;
+}
+
+.portfolio-content .image img {
+  max-height: 250px;
 }
 
 section.name {
@@ -195,7 +207,7 @@ h4 {
       "awards awards";
   }
   section.buttons {
-    margin: auto;
+    margin: auto 0;
     display: block;
   }
   .button {
@@ -238,8 +250,19 @@ h4 {
   .portfolio {
     max-width: 1400px;
   }
+  .portfolio-content .content {
+    margin-bottom: 0;
+  }
+  .portfolio-content.image-left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .portfolio-content.image-right {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
   section.buttons {
-    margin: auto;
+    margin: auto 0;
     display: block;
   }
   .button {
