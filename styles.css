@@ -61,6 +61,7 @@ ul {
 
 .portfolio-content .image img {
   max-height: 250px;
+  max-width: 100%;
 }
 
 section.name {
